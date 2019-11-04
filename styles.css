@@ -1,0 +1,297 @@
+/* GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+h1
+{
+    font-family: "Crete Round", serif;
+    font-size: 45px;
+    color: #444;
+}
+h2
+{
+    color: #444;
+    font-size: 55px;
+    
+}
+h3
+{
+    font-size: 30px;
+    color: #444;
+}
+h4
+{
+    font-size: 24px;
+    color: #444;
+    
+}
+p
+{
+    line-height: 20px; /* hauteur de ligne */
+    color: #777;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+.wrapper
+{
+    width: 940px; 
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.orange
+{
+    color: #ff7a00;
+}
+.clear
+{
+    clear: both;
+}
+small
+{
+    font-size: 13px;
+    font-style: italic; /* écriture en italique */
+}
+
+/* HEADER */
+
+header
+{
+    height: 120px;
+}
+header h1
+{
+    float: left;
+    margin-top: 32px;
+}
+header nav
+{
+    float: right;
+    margin-top: 50px;
+}
+header nav ul li
+{
+    float:left;
+    display: inline-block;
+    
+}
+header nav ul li a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px; /*Espacer les éléments les uns des autres*/
+}
+
+/* MAIN IMAGE*/
+
+#main-image
+{ 
+    height: 580px;
+    background: url("images/sean-o-KMn4VEeEPR8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#main-image h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+    
+}
+
+.button-1
+{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.button-1:hover
+{
+    background: #02b8dd;
+}
+
+/* STEPS */
+
+#steps ul
+{
+    margin : 80px 0;
+}
+#steps ul li
+{
+    width: 300px; /* largeur */
+    float: left; /* faire flotter les parties les unes à côté des autres */
+}
+#steps h4
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 20px;
+}
+#steps p
+{
+    margin-bottom: 20px;
+}
+#step-1
+{
+    background: url(images/steps-icon-1.png) no-repeat top center;
+}
+#step-2
+{
+    background: url(images/steps-icon-2.png) no-repeat top center;
+}
+#step-3
+{
+    background: url(images/steps-icon-3.png) no-repeat top center;
+    margin-left: 20px;
+}
+
+/* POSSIBILITIES */
+
+#possibilities
+{
+    background-color: #efefef;
+    padding: 60px 0;
+}
+
+#possibilities article
+{
+    width: 460px; /* largeur */
+    height: 270px;
+    float: left; /* positionner les articles les uns à côté des autres */
+    border-radius: 10px; /* arrondir les bords */
+}
+#possibilities article:first-child
+{
+    margin-right: 20px; /* espacer les articles entre eux */
+}
+.overlay
+{
+    background: rgba(255,255,255,0.85);
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-sizing: border-box; /* le fond blanc transparent se fixe sur la taille de l'image */
+}
+article h4
+{
+    border-bottom: 1px solid #ddd; /* petit trait de bordure entre le titre et le texte */
+    padding-bottom: 20px; /* espacer le titre du trait */
+    text-transform: uppercase;
+    margin-bottom: 20px; /* espacer le trait du texte */
+    text-align: center;
+    
+}
+#possibilities p
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button2
+{
+    color: #fff;
+    background-color: #ff7a00;
+    padding: 6px 20px; /* définir combien de orange on a autour de notre texte */
+    border-radius: 3px;
+}
+.button2:hover /* quand on passe dessus il devient bleu */
+{
+    color: #fff;
+    background-color: #02b8dd;
+ }
+
+/* CONTACT */
+#contact
+{
+    padding: 60px 0;
+    text-align: center;
+    
+}
+#contact h3
+{
+    width: 400px;
+    text-transform: uppercase;
+    margin : 0 auto 20px auto;
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+    
+}
+form
+{
+    margin: 60px 0 20px 0;
+}
+label
+{
+    font-weight: bold; /* en gras */
+    font-size: 20px;
+    margin-right: 10px;
+    color: #777;
+    
+}
+input[type="text"]
+{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+.button3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold; /* en gras */
+    padding: 11px;
+    background-color: #02b8dd;
+    border-style: none; /* retirer la bordure prédéfinie */
+}
+.button3:hover
+{
+    color: #fff;
+    background-color: orange;
+}
+/* FOOTER */
+footer
+{
+    height: 260px; /* taille du footer */
+    background-color: #444;
+}
+footer h1
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
